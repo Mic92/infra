@@ -2,6 +2,7 @@ let
   nix-community-infra = pkgs: rec {
     inherit (pkgs)
       git-crypt
+      nixos-install-tools
       niv;
     nixopsUnstable = (pkgs.nixopsUnstable.withPlugins(ps: []));
 
